@@ -1,0 +1,211 @@
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+            <meta name="robots" content="noindex, nofollow">
+            <meta name="googlebot" content="noindex, nofollow">
+            
+            <script type="text/javascript" async="true">
+                $(document).ready(function() { $(".welcome").append("!!!");}); 
+            </script>
+            <style type="text/css">
+                .welcome {
+        color:green;
+        font-size:36px;
+        font-family:cursive;
+        text-align:center;
+        padding:20px;
+    }
+            </style>
+        </head>
+        <body>
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            background: url('https://i.gifer.com/embedded/download/AD9T.gif') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sidebar {
+            width: 450px; /* Width of the sidebar */
+            background-color: rgba(0, 0, 0, 0.85); /* Solid black with transparency */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px; /* Padding */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            border-radius: 10px; /* Rounded edges */
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            transition: background-color 0.3s;
+        }
+
+        .form-group input:focus {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .toggle {
+            margin-top: 10px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .tab {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            cursor: pointer;
+            color: white;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .tab.active {
+            font-weight: bold;
+            border-bottom: 2px solid #007bff;
+        }
+
+        .form-title {
+            font-size: 1.5em;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            font-size: 0.8em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .sidebar {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="tab active" onclick="showLogin()">Log In</div>
+            <div class="tab" onclick="showSignup()">Sign Up</div>
+
+            <!-- Login Form -->
+            <div id="login-form" style="display: block;">
+                <h1 class="form-title">Log In</h1>
+                <div class="form-group">
+                    <input type="text" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button onclick="handleLogin()">Log In</button>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div id="signup-form" style="display: none;">
+                <h1 class="form-title">Welcome to JarvisGPT</h1>
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <input type="date" placeholder="Date of Birth" required>
+                </div>
+                <div class="form-group">
+                    <input type="number" placeholder="Age" required>
+                </div>
+                <button onclick="handleSignup()">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Powered by JarvisGPT</div>
+
+    <script>
+        function showLogin() {
+            document.getElementById('signup-form').style.display = 'none'; // Hide signup form
+            document.getElementById('login-form').style.display = 'block'; // Show login form
+            document.querySelector('.tab.active').classList.remove('active');
+            document.querySelector('.tab:nth-child(1)').classList.add('active');
+        }
+
+        function showSignup() {
+            document.getElementById('login-form').style.display = 'none'; // Hide login form
+            document.getElementById('signup-form').style.display = 'block'; // Show signup form
+            document.querySelector('.tab.active').classList.remove('active');
+            document.querySelector('.tab:nth-child(2)').classList.add('active');
+        }
+
+        function handleLogin() {
+            // Logic for handling login (could be an API call)
+            alert('Login function triggered');
+        }
+
+        function handleSignup() {
+            // Logic for handling signup (could be an API call)
+            alert('Sign Up function triggered');
+        }
+    </script>
+</body>
+</html>
+
+        </body>
+    </html>
